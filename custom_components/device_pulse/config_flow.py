@@ -207,9 +207,9 @@ class DevicePingMonitorBaseFlow(abc.ABC, _FlowProtocol):
                     CONF_PING_INTERVAL, default=self.ping_interval
                 ): selector.NumberSelector(
                     selector.NumberSelectorConfig(
-                        min=5,
+                        min=1,
                         max=600,
-                        step=5,
+                        step=1,
                         mode=selector.NumberSelectorMode.BOX,
                         unit_of_measurement="seconds",
                     )
